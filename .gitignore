@@ -10,3 +10,5 @@ target/
 *.pdb
 
 /tmp/
+
+.DS_Store
