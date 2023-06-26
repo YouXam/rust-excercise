@@ -2,6 +2,10 @@
 
 学习 rust 时候写的一些小练习，大部分是跟着教程写的，自己修改的部分在下文有注明。
 
+## [rust-by-example](./rust-by-example/)
+
+参见 <https://rustwiki.org/zh-CN/rust-by-example/index.html>。
+
 ## [mgrep](./mgrep/)
 
 参考 <https://kaisery.github.io/trpl-zh-cn/ch12-00-an-io-project.html>。
