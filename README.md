@@ -17,3 +17,13 @@
 1. 当接收到 SIGINT 信号时[优雅停机和处理](https://kaisery.github.io/trpl-zh-cn/ch20-03-graceful-shutdown-and-cleanup.html)。
 
 运行服务器之后使用 `test.py` 可以测试线程池和停机清理(在运行的时候按`Ctrl+C`)。
+
+## [async-web-server](./async_web_server/)
+
+参考 <https://course.rs/advance/async/web-server.html>。
+
+1. 把 for_each_concurrent 改成了 while 循环，实际测试这样效率高一点。
+
+## [async-web-server-tokio](./async_web_server_tokio/)
+
+上面的 async-web-server 用的是 async-std，这个用的是 tokio，大概快了 30%。
