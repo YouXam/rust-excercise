@@ -31,3 +31,9 @@
 ## [async-web-server-tokio](./async_web_server_tokio/)
 
 上面的 async-web-server 用的是 async-std，这个用的是 tokio，大概快了 30%。
+
+## [mredis](./mredis/)
+
+参考 <https://course.rs/advance-practice/intro.html>
+
+1. 比教程中的实现要简单，没有使用 bytes 引用，对于数据直接进行复制；也没有实现自己的缓存读入器，直接使用了 `BufReader`。
