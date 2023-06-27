@@ -8,10 +8,12 @@ use tokio::time::{self, Duration};
 async fn main() {
     let listener = TcpListener::bind("127.0.0.1:7878").await.unwrap();
     
-    while let Ok((socket, _)) = listener.accept().await {
-        spawn(async move {
-            handle_connection(socket).await;
-        });
+    loop {
+        if let Ok((socket, _)) = listener.accept().await {
+            spawn(async move {
+                handle_connection(socket).await;
+            });
+        }
     }
 }
 

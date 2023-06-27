@@ -21,8 +21,8 @@ async fn main() {
         })
         .await;
     */
-    while let Some(stream) = listener.incoming().next().await {
-        if let Ok(stream) = stream {
+    loop {
+        if let Some(Ok(stream)) = listener.incoming().next().await {
             task::spawn(async move {
                 handle_connection(stream).await;
             });
